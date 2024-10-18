@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="noindex, nofollow" name="robots" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Link to your CSS file -->
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="files-body">
+    <!-- Navigation Bar -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Chart</a>
+      <a href="config.html">Config</a>
+      <a href="files.html" class="active">Files</a>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <h2>File Management</h2>
+
+    <!-- Main Content -->
+    <div class="file-management">
+      <br />
+      <!-- Reset ESP32 Button -->
+      <button id="resetBtn">Reset ESP32</button>
+      <br /><br />
+
+      <!-- SPIFFS File Delete Selector and Button -->
+      <h3>SPIFFS Files</h3>
+      <select id="deleteSPIFFSFileSelector"></select>
+      <button id="deleteSPIFFSFileBtn">Delete Selected SPIFFS File</button>
+      <br /><br />
+
+      <!-- SD Card File Delete Selector and Button -->
+      <h3>SD Card Files</h3>
+      <select id="deleteSdFileSelector"></select>
+      <button id="deleteSdFileBtn">Delete Selected SD File</button>
+      <br /><br />
+
+      <!-- File Lists -->
+      <h3>SPIFFS Files</h3>
+      <pre id="spiffsFileList"></pre>
+
+      <h3>SD Card Files</h3>
+      <pre id="sdCardFileList"></pre>
+
+      <select id="sdFileSelector"></select>
+      <button id="showSdFileContentsBtn">Show File Contents</button>
+      <pre id="sdFileContents"></pre>
+
+      <br />
+    </div>
+
+    <!-- Script for File Management -->
+    <script src="files.js"></script>
+    
+  </body>
+</html>

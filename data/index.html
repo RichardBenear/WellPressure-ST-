@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Water Pressure Chart</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <!-- Highcharts libraries -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/themes/dark-unica.js"></script>
+</head>
+
+<body class="index-page">
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Chart</a>
+    <a href="config.html">Config</a>
+    <a href="files.html">Files</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <h3>Water Pressure Monitor</h3>
+
+  <span id="loc-input"></span>
+  
+  <span id="zone-info"></span>
+
+  <div class="content">
+    <div id="chart-pressure"></div>
+    <button id="refreshChartBtn">Refresh Chart</button>
+  </div>
+  <div id="loadingMessage" style="display:none;"></div>
+  <div class="content">
+    <div id="chart-history-container"></div>
+      <button id="loadHistoryBtn">Load Historical Data</button>
+      <select id="dateFileSelector"></select>
+  </div>
+  
+  <div id="file-size"></div>
+
+  <div id="current-zone-number"></div>
+  <div id="current-zone-name"></div>
+  <div id="current-zone-PSI"></div>
+  <div id="current-zone-controller"></div>
+  <div id="current-zone-days"></div>
+  <div id="current-zone-start"></div>
+  <div id="current-zone-run"></div>
+  
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="index.js" defer></script>
+</body>
+
+</html>

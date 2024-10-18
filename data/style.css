@@ -1,0 +1,341 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+/* General Styling */
+html, body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #c1ced8;
+  background-color: #26373b;
+  margin: 0;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 1.8rem;
+  color: #b9c9d4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+/* Navigation Styling */
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.topnav a {
+  display: inline-block;
+  color: #ECEFF1;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.topnav a:hover {
+  background-color: #B0BEC5;
+  color: #37474F;
+}
+
+.topnav a.active {
+  background-color: #607D8B;
+  color: white;
+}
+
+/* Input and Button Styling */
+input, select {
+  border-radius: 5px;
+  border: 1px solid #B0BEC5;
+}
+
+/* Content and Card Styling */
+.content {
+  padding: 3%;
+  background-color: #141414;
+}
+
+/* Chart Container Styling */
+.chart-container {
+  padding: 0 5% 5%;
+  color: #CFD8DC;
+}
+
+/* Div and Input Styling */
+div#first {
+  width: 350px;
+  margin: 10px auto 0;
+  padding: 10px;
+  background-color: #607D8B;
+  color: #ECEFF1;
+  border: 2px solid #B0BEC5;
+  border-radius: 10px;
+}
+
+.button-select {
+  padding: 5px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px; 
+  margin-top: 15px;
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px; 
+  margin-top: 15px;
+  color: rgb(255, 255, 255);
+}
+
+input#locationName, input#zoneName {
+  background-repeat: no-repeat;
+  background-position: 6px;
+  border: 1px solid #CFD8DC;
+  margin: 10px 0;
+  padding-left: 15px;
+  width: 50px;
+  height: 20px;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+  background-color: darkgray;
+  padding: 7px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Additional hover effect (optional) */
+button:hover {
+  background-color: lightgray;
+}
+
+span {
+  display: block;
+}
+
+span#loc-input{
+  background-color: #141414;
+}
+
+span#zone-info {
+  font-size: small;
+  font-family: monospace;
+}
+
+span#calib-offset {
+  display: block;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+/* Selector Styling */
+select {
+  background-color: rgb(214, 212, 212);
+  padding: 1px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Additional hover effect (optional) */
+select:hover {
+  background-color: darkgray;
+}
+
+.table-wrapper {
+  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+/* Blue-gray table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  display: inline-table;
+}
+
+table thead {
+  color: beige;
+}
+
+table th {
+  padding: 5px 5px;
+  text-align: center;
+  border: 1px solid #000000;
+  font-size: small;
+  color: #f2f2f2;
+}
+
+table td {
+  padding: 5px 5px;
+  text-align: center;
+  border: 1px solid #000000;
+  font-size: small;
+  font-weight: bold;
+  color: #141414;
+}
+
+/* Ensure consistency between text and input mode */
+.text-mode {
+  padding: 8px;
+  text-align: center;
+}
+
+.edit-mode {
+  padding: 0;
+}
+
+/* Using IDs to target td elements */
+td#znumber {
+  width: 10%;
+}
+
+td#zname {
+  width: 20%;
+}
+
+td#controller {
+  width: 10%;
+}
+
+td#days {
+  width: 10%;
+}
+
+td#avgpsi {
+  width: 10%;
+}
+
+td#daynight {
+  width: 10%;
+}
+
+td#icons {
+  width: 30%;
+}
+
+input[type="text"] {
+  width: 60px;
+  text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #a4bdb0;
+  padding: 5px 5px;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: rgb(137, 167, 156);
+  padding: 5px 5px;
+}
+
+table tbody tr:hover {
+  background-color: #d6f5e9;
+}
+
+.table-container {
+  margin: 5px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+}
+
+/* Action buttons */
+a.add, a.edit, a.delete {
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.add i, a.edit i, a.delete i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+a.add i {
+  color: #28a745; /* Green */
+}
+
+a.edit i {
+  color: #ffc107; /* Yellow */
+}
+
+a.delete i {
+  color: #dc3545; /* Red */
+}
+
+a.add:hover i, a.edit:hover i, a.delete:hover i {
+  opacity: 0.7;
+}
+
+/* Tooltip styling */
+[data-toggle="tooltip"] {
+  position: relative;
+}
+
+[data-toggle="tooltip"]::after {
+  content: attr(title);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 12px;
+}
+
+[data-toggle="tooltip"]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sensor, Location and Calibration input styling */
+#sensor-rate-input,
+#loc-input, 
+#calib-input {
+  width: 30%;
+  background-color: #b0bec5;
+  color: #141414;
+  text-align: center;
+  padding: 5px;
+}
+
+.index-page #sensor-rate-input,
+.index-page #loc-input, 
+.index-page #calib-input {
+  color: #CFD8DC;
+  text-align: center;
+  padding: 5px;
+  display: contents;
+}
+    

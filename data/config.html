@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Configuration Page</title>
+    <meta content="noindex, nofollow" name="robots" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="config-page">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Chart</a>
+      <a href="config.html" class="active">Config</a>
+      <a href="files.html">Files</a>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <h2>Settings</h2>
+
+    <div class="table-wrapper">
+      <span>Enter Location Name:</span>
+      <input id="loc-input" name="loc-input" type="text" maxlength="30" />
+    </div>
+    <button id="loc-submit" class="mybutton">Submit</button>
+
+    <div class="table-wrapper">
+      <div class="table-title">
+        <span>Zone Form</span>
+      </div>
+
+      <div class="table-container">
+        <table id="zone-table">
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Name</th>
+              <th>Controller</th>
+              <th>Days</th>
+              <th>AvgPSI</th>
+              <th>Start</th>
+              <th>Run</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="zone-table-body">
+            <tr>
+              <td id="znumber" name="znumber[]">0</td>
+              <td id="zname" name="zname[]">OFF</td>
+              <td id="controller" name="controller[]">OFF</td>
+              <td id="days" name="days[]">OFF</td>
+              <td id="avgpsi" name="avgpsi[]">OFF</td>
+              <td id="start" name="start[]">OFF</td>
+              <td id="run" name="run[]">OFF</td>
+              <td id="icons">
+                <a class="add" title="Add" data-toggle="tooltip"
+                  ><i class="material-icons md-28">&#xE03B;</i></a>
+                <a class="edit" title="Edit" data-toggle="tooltip"
+                  ><i class="material-icons md-28">&#xE254;</i></a>
+                <a class="delete" title="Delete" data-toggle="tooltip"
+                  ><i class="material-icons md-28">&#xE872;</i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="mybutton add-new">
+          <i class="fa fa-plus"></i> Add New Row
+        </button>
+        <div class="button-select">
+          <button id="zone-form-submit" class="mybutton" type="submit">Submit Zone Table</button>
+        </div>
+        <div class="button-select">
+          <button id="load-sd-zone-table" class="mybutton">Load Current Zone Table</button>
+        </div>
+        <div class="button-select">
+          <select id="jsonFileSelector"></select>
+          <button id="load-spiffs-zone-table">Load External Zone Table</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Sensor Sample Rate Input -->
+    <div class="table-wrapper">
+      <span>Enter Sensor Sample Rate in Seconds:</span>
+      <input id="sensor-rate-input" name="sensor-rate-input" type="text" maxlength="30" />
+    </div>
+    <button id="sensor-rate-submit" class="mybutton">Submit</button>
+
+    <!-- The Calibration Input -->
+    <div class="table-wrapper">
+      <span>For Calibration, Enter Actual PSI:</span>
+      <input id="calib-input" name="calib-input" type="text" maxlength="30" />
+    </div>
+    <button id="calib-submit" class="mybutton">Submit</button>
+
+    <!-- Show Calibration Offset -->
+    <span id="calib-offset"></span>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="config.js"></script>
+  </body>
+</html>
