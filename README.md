@@ -27,8 +27,18 @@ There is a **Files Page** that provides a way to inspect all the SD and SPIFFS f
   In some pictures, the zones may be changing but the pressure is not changing with the zones. This is because the controller is turned off. Seome red plot points occur when the leaking water pressure happens to fall outside the average PSI range for that zone.
   
 
-![Title](./images/WaterPressureChart-1.png)
+![Title](./images/WaterPressureChart.png)
 
 ![Title](./images/192.168.11.235_index.html.png)
 
+![Title](./images/WaterPressureChartZoom.png)
+
+![Title](./images/ConfigurationPage.png)
+
+![Title](./images/FileManagementPage.png)
+
 ![Title](./images/case_top.jpg)
+
+![Title](./images/case_bottom.jpg)
+
+
