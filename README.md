@@ -15,3 +15,5 @@ There is a **Files Page** that provides a way to inspect all the SD and SPIFFS f
 **ElegantOTA** is used to wirelessly update the code. A 3D-printed case is used to house the electronics.
 
 **Author: Richard Benear 9/22/23**
+
+![Title](./images/Water Pressure Chart-1.png)
