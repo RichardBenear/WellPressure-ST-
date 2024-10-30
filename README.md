@@ -17,3 +17,4 @@ There is a **Files Page** that provides a way to inspect all the SD and SPIFFS f
 **Author: Richard Benear 9/22/23**
 
 ![Title](./images/WaterPressureChart-1.png)
+![Title](./images/192.168.11.235_index.html.png)
